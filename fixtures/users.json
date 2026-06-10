@@ -1,0 +1,14 @@
+{
+  "validUser": {
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+  },
+  "newUser": {
+    "name": "John Doe",
+    "job": "QA Engineer"
+  },
+  "updateUser": {
+    "name": "Jane Doe",
+    "job": "Senior QA Engineer"
+  }
+}

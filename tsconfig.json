@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*":    ["pages/*"],
+      "@services/*": ["services/*"],
+      "@utils/*":    ["utils/*"],
+      "@config/*":   ["config/*"],
+      "@constants/*":["constants/*"],
+      "@schemas/*":  ["schemas/*"],
+      "@fixtures/*": ["fixtures/*"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

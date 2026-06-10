@@ -1,0 +1,22 @@
+{
+  "name": "enterprise-playwright-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright API Testing Framework using reqres.in",
+  "scripts": {
+    "test":            "playwright test",
+    "test:smoke":      "playwright test --project=smoke",
+    "test:regression": "playwright test --project=regression",
+    "test:crud":       "playwright test --project=crud",
+    "test:auth":       "playwright test --project=auth",
+    "test:dev":        "ENV=dev playwright test",
+    "test:qa":         "ENV=qa playwright test",
+    "test:prod":       "ENV=prod playwright test",
+    "report":          "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
