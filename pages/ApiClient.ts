@@ -9,6 +9,7 @@ export class ApiClient {
   products: ProductAPI;
 
   
+  
   constructor(request: APIRequestContext) {
     this.users    = new UserAPI(request);
     this.auth     = new AuthAPI(request);

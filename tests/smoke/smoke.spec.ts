@@ -8,6 +8,7 @@ test.describe('Smoke Tests', () => {
     expect(response.status()).toBe(200);
   });
 
+  
   test('GET /users/2 returns valid user', async ({ request }) => {
     const client = new ApiClient(request);
     const response = await client.users.getUserById(2);

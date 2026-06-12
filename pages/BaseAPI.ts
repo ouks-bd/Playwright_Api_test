@@ -15,7 +15,6 @@ export class BaseAPI {
       'x-api-key':    'reqres-free-v1',
     };
   }
-  
 
   protected async get(endpoint: string) {
     logger.info(`GET ${this.baseURL}${endpoint}`);
@@ -32,10 +31,12 @@ export class BaseAPI {
     return await this.request.put(`${this.baseURL}${endpoint}`, { headers: this.headers, data: body });
   }
 
+  
   protected async patch(endpoint: string, body: object) {
     logger.info(`PATCH ${this.baseURL}${endpoint}`);
     return await this.request.patch(`${this.baseURL}${endpoint}`, { headers: this.headers, data: body });
   }
+
 
   protected async delete(endpoint: string) {
     logger.info(`DELETE ${this.baseURL}${endpoint}`);
