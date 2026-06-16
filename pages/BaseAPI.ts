@@ -11,8 +11,9 @@ export class BaseAPI {
     this.baseURL = `${process.env.BASE_URL ?? 'https://reqres.in'}${process.env.API_VERSION ?? '/api'}`;
     this.headers = {
       'Content-Type': 'application/json',
-      'Accept':       'application/json',
-      'x-api-key':    'reqres-free-v1',
+      Accept: 'application/json',
+      'x-api-key': process.env.REQRES_API_KEY ?? process.env.API_KEY ?? '',
+      'X-Reqres-Env': process.env.REQRES_ENV ?? 'prod',
     };
   }
 
